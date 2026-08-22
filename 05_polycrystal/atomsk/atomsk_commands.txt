@@ -1,0 +1,5 @@
+atomsk --create fcc 3.58 Al unitcell.cfg
+
+atomsk --polycrystal unitcell.cfg poly.txt unitcell_poly.cfg
+
+atomsk unitcell_poly.cfg -wrap Al_poly.cfg
