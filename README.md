@@ -1,5 +1,3 @@
-\# AlxCoCrFeNi Atomistic Simulations
-
 # AlxCoCrFeNi Atomistic Simulations
 
 Atomistic simulation workflows for investigating the mechanical, defect-related, thermal, vibrational, and microstructural behavior of Al<sub>x</sub>CoCrFeNi high-entropy alloys using molecular dynamics and related computational tools.
