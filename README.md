@@ -6,13 +6,11 @@ Atomistic simulation workflows for investigating the mechanical, defect-related,
 
 ## Overview
 
-This repository describe the computational work performed during my undergraduate research on **Al<sub>x</sub>CoCrFeNi high-entropy alloys (HEAs)**, with the Al content varied over the range:
-
-**0.1 ≤ x ≤ 0.7**
+This repository describes the computational work performed during my undergraduate research on **Al<sub>x</sub>CoCrFeNi high-entropy alloys (HEAs)**, with the Al content varied over the range: **0.1 ≤ x ≤ 0.7**
 
 The work primarily uses **molecular dynamics (MD) simulations in LAMMPS** to investigate how atomic-scale structure and composition influence different material properties.
 
-The repository includes demonstration workflows for:
+Atomistic Simulations:
 
 * Uniaxial tensile deformation
 * Generalized stacking fault energy (GSFE)
