@@ -6,7 +6,7 @@ Atomistic simulation workflows for investigating the mechanical, defect-related,
 
 ## Overview
 
-This repository contains computational workflows developed during my undergraduate research on **Al<sub>x</sub>CoCrFeNi high-entropy alloys (HEAs)**, with the Al content varied over the range:
+This repository describe the computational work performed during my undergraduate research on **Al<sub>x</sub>CoCrFeNi high-entropy alloys (HEAs)**, with the Al content varied over the range:
 
 **0.1 ≤ x ≤ 0.7**
 
