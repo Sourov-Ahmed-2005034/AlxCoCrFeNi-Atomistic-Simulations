@@ -203,12 +203,11 @@ Import structure into LAMMPS
 Relax/equilibrate structure
         ↓
 Perform subsequent MD analysis
+  
 ```
 
-
-
+  
 ---
-
 ## Software and Tools
 
 The primary computational tools used in this project are:
@@ -260,11 +259,6 @@ Representative Python packages used in the post-processing workflows include:
 * Matplotlib
 * Jupyter
 
-Python dependencies for the demonstration notebooks are listed in:
-
-```text
-requirements.txt
-```
 
 ---
 
@@ -302,38 +296,41 @@ The interatomic-potential file itself is **not included in this repository unles
 
 Users attempting to reproduce the simulations should obtain the appropriate potential directly from the original authorized source and update the relevant path in the LAMMPS input scripts where necessary.
 
-
-
----
+```
 
 
 ## Reproducibility
 
 My undergraduate thesis work has not yet been published. Therefore, the LAMMPS input scripts, simulation data, and detailed results are not publicly available at this time.
 
-This section will be updated with the relevant scripts, data, and results once the associated work is published.
+This section will be updated with the relevant scripts, data, and results once the associated work is published.  
 
----  
-  
+    
+---
 
-## References
 
-### LAMMPS
+## LAMMPS
 
 Plimpton, S. (1995). Fast Parallel Algorithms for Short-Range Molecular Dynamics. *Journal of Computational Physics, 117*(1), 1–19.
 DOI: https://doi.org/10.1006/jcph.1995.1039
 
-### Atomsk
+---
+
+## Atomsk
 
 Hirel, P. (2015). Atomsk: A tool for manipulating and converting atomic data files. *Computer Physics Communications, 197*, 212–219.
 DOI: https://doi.org/10.1016/j.cpc.2015.07.012
 
-### OVITO
+---
+
+## OVITO
 
 Stukowski, A. (2010). Visualization and analysis of atomistic simulation data with OVITO—the Open Visualization Tool. *Modelling and Simulation in Materials Science and Engineering, 18*(1), 015012.
 DOI: https://doi.org/10.1088/0965-0393/18/1/015012
 
-### High-Entropy Alloys
+---
+
+## High-Entropy Alloys
 
 Cantor, B., Chang, I. T. H., Knight, P., & Vincent, A. J. B. (2004). Microstructural development in equiatomic multicomponent alloys. *Materials Science and Engineering: A, 375–377*, 213–218.
 DOI: https://doi.org/10.1016/j.msea.2003.10.257
@@ -341,25 +338,23 @@ DOI: https://doi.org/10.1016/j.msea.2003.10.257
 Yeh, J.-W., Chen, S.-K., Lin, S.-J., Gan, J.-Y., Chin, T.-S., Shun, T.-T., Tsau, C.-H., & Chang, S.-Y. (2004). Nanostructured high-entropy alloys with multiple principal elements: Novel alloy design concepts and outcomes. *Advanced Engineering Materials, 6*(5), 299–303.
 DOI: https://doi.org/10.1002/adem.200300567
 
-### Interatomic Potential
-
-`[Insert the complete reference for the specific Al-Co-Cr-Fe-Ni interatomic potential used in the simulations.]`
-
-Additional method-specific references for tensile simulation, GSFE, thermal conductivity, PDOS, MSD, and polycrystalline modeling are documented within the relevant workflow directories and in:
-
-```text
-docs/references.md
-```
-
 ---
 
-## Author
+## Interatomic Potential
+  
+D. Farkas, and A. Caro (2020), "Model interatomic potentials for Fe–Ni–Cr–Co–Al high-entropy alloys", Journal of Materials Research 35, 3031-3040. DOI: 10.1557/jmr.2020.294.
+
+  
+
+---
+## Author of This GitHub Repository
 
 **Sourov Ahmed**
 
-B.Sc. in Mechanical Engineering
-Khulna University of Engineering & Technology (KUET), Bangladesh
-
+B.Sc. in Mechanical Engineering.  
+Khulna University of Engineering & Technology (KUET), Khulna, Bangladesh.  
+---
+  
 **Research interests:**
 
 * Computational Materials Science
@@ -371,8 +366,9 @@ Khulna University of Engineering & Technology (KUET), Bangladesh
 * CALPHAD
 * Microstructure Modeling
 
-This repository was developed to document and organize my undergraduate computational materials research and its continuing extensions toward more advanced atomistic and multiscale materials modeling.
+The primary goal of this repository is to provie a overview of my undergraduate computational materials research and its continuing extensions toward more advanced atomistic and multiscale materials modelling.
 
+---
 **GitHub:**
 https://github.com/Sourov-Ahmed-2005034
 
@@ -382,5 +378,4 @@ https://github.com/Sourov-Ahmed-2005034
 
 This repository is under active documentation and organization. The simulation workflows are being prepared as reproducible research examples while preserving the integrity of the original research data and respecting redistribution restrictions associated with third-party computational resources.
 
-
-
+---
