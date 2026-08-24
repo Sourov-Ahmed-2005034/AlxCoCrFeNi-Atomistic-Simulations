@@ -94,91 +94,7 @@ The repository contains **demonstration versions** of input files and representa
 
 ---
 
-## Repository Structure
 
-```text
-AlxCoCrFeNi-Atomistic-Simulations/
-│
-├── README.md
-├── .gitignore
-├── requirements.txt
-│
-├── docs/
-│   ├── software.md
-│   ├── simulation_overview.md
-│   ├── interatomic_potential.md
-│   └── references.md
-│
-├── figures/
-│   ├── tensile_demo.png
-│   ├── gsfe_demo.png
-│   ├── thermal_conductivity_demo.png
-│   ├── pdos_demo.png
-│   └── polycrystal_demo.png
-│
-├── 01_tensile/
-│   ├── README.md
-│   ├── input/
-│   │   └── tensile_demo.in
-│   ├── postprocessing/
-│   │   └── tensile_postprocessing_demo.ipynb
-│   ├── sample_data/
-│   │   └── tensile_sample.csv
-│   └── sample_results/
-│       └── stress_strain_demo.png
-│
-├── 02_gsfe/
-│   ├── README.md
-│   ├── input/
-│   │   └── gsfe_demo.in
-│   ├── postprocessing/
-│   │   └── gsfe_postprocessing_demo.ipynb
-│   ├── sample_data/
-│   │   └── gsfe_sample.csv
-│   └── sample_results/
-│       └── gsfe_curve_demo.png
-│
-├── 03_thermal_conductivity/
-│   ├── README.md
-│   ├── input/
-│   │   └── thermal_conductivity_demo.in
-│   ├── postprocessing/
-│   │   └── thermal_postprocessing_demo.ipynb
-│   ├── sample_data/
-│   │   └── thermal_sample.csv
-│   └── sample_results/
-│       └── thermal_conductivity_demo.png
-│
-├── 04_pdos_msd/
-│   ├── README.md
-│   ├── input/
-│   │   ├── pdos_demo.in
-│   │   └── msd_demo.in
-│   ├── postprocessing/
-│   │   └── pdos_msd_postprocessing_demo.ipynb
-│   ├── sample_data/
-│   │   ├── pdos_sample.csv
-│   │   └── msd_sample.csv
-│   └── sample_results/
-│       ├── pdos_demo.png
-│       └── msd_demo.png
-│
-└── 05_polycrystal/
-    ├── README.md
-    ├── atomsk/
-    │   ├── poly.txt
-    │   └── atomsk_commands.txt
-    ├── lammps/
-    │   └── polycrystal_demo.in
-    ├── postprocessing/
-    │   └── polycrystal_analysis_demo.ipynb
-    └── sample_results/
-        └── polycrystal_demo.png
-```
-
-Each workflow directory contains its own README describing the corresponding calculation in greater detail.
-
----
 
 ## Simulation Workflows
 
@@ -198,17 +114,6 @@ The general workflow consists of:
 8. Stress-strain data extraction
 9. Python-based post-processing and visualization
 
-The corresponding demonstration files are available in:
-
-```text
-01_tensile/
-```
-
-The representative post-processing notebook converts simulation output into a stress-strain dataset and generates a stress-strain curve.
-
-**Representative result:**
-
-![Representative tensile result](figures/tensile_demo.png)
 
 ---
 
@@ -233,15 +138,6 @@ The workflow generally involves:
 6. Calculation of excess fault energy
 7. Construction of the GSFE curve
 
-The demonstration workflow is located in:
-
-```text
-02_gsfe/
-```
-
-**Representative result:**
-
-![Representative GSFE result](figures/gsfe_demo.png)
 
 ---
 
@@ -255,17 +151,7 @@ The workflow includes the required simulation preparation, equilibration, therma
 
 The exact thermal-conductivity methodology and simulation parameters used in the research are documented within the corresponding workflow.
 
-Files are available in:
 
-```text
-03_thermal_conductivity/
-```
-
-The included Jupyter Notebook demonstrates how representative thermal-conductivity data can be imported, processed, and visualized.
-
-**Representative result:**
-
-![Representative thermal conductivity result](figures/thermal_conductivity_demo.png)
 
 ---
 
@@ -290,17 +176,6 @@ MSD analysis is useful for examining:
 * Diffusive behavior
 * Dynamical characteristics of the atomic system
 
-The corresponding files are located in:
-
-```text
-04_pdos_msd/
-```
-
-The post-processing notebook provides a demonstration of data processing and visualization for both analyses.
-
-**Representative PDOS result:**
-
-![Representative PDOS result](figures/pdos_demo.png)
 
 ---
 
@@ -332,17 +207,7 @@ Relax/equilibrate structure
 Perform subsequent MD analysis
 ```
 
-Example Atomsk commands and the grain-definition file are included in:
 
-```text
-05_polycrystal/atomsk/
-```
-
-This workflow provides a foundation for future investigations of grain boundaries and polycrystalline effects in compositionally complex alloys.
-
-**Representative structure:**
-
-![Representative polycrystalline structure](figures/polycrystal_demo.png)
 
 ---
 
@@ -425,170 +290,33 @@ The accuracy of molecular dynamics simulations strongly depends on the interatom
 
 The potential used in the thesis simulations should be documented using the following information:
 
-* **Potential name:** `[Insert exact potential name]`
-* **Potential type:** `[EAM / MEAM / other]`
-* **Original authors:** `[Insert authors]`
-* **Publication:** `[Insert publication]`
-* **DOI:** `[Insert DOI]`
-* **Potential source:** `[Insert database/repository/source]`
+* **Potential name:** `FeNiCrCoAl-heaweight.setfl`
+* **Potential type:** `eam/alloy`
+* **Original authors:** `D. Farkas, and A. Caro (2020)`
+* **Publication:** `Model interatomic potentials for Fe–Ni–Cr–Co–Al high-entropy alloys", Journal of Materials Research 35, 3031-3040.`
+* **DOI:** `(https://doi.org/10.1557/jmr.2020.294)`
+* **Potential source:** `(https://www.ctcms.nist.gov/potentials/system/Al-Co-Cr-Fe-Ni/)`
 
-A detailed description and citation are provided in:
 
-```text
-docs/interatomic_potential.md
 ```
 
 The interatomic-potential file itself is **not included in this repository unless redistribution is explicitly permitted by its original source or license**.
 
 Users attempting to reproduce the simulations should obtain the appropriate potential directly from the original authorized source and update the relevant path in the LAMMPS input scripts where necessary.
 
----
 
-## Representative Results
-
-The repository contains selected representative figures intended to demonstrate the outputs produced by the computational workflows.
-
-### Tensile Response
-
-![Tensile stress-strain curve](figures/tensile_demo.png)
 
 ---
 
-### Generalized Stacking Fault Energy
-
-![GSFE curve](figures/gsfe_demo.png)
-
----
-
-### Lattice Thermal Conductivity
-
-![Thermal conductivity result](figures/thermal_conductivity_demo.png)
-
----
-
-### Phonon Density of States
-
-![PDOS result](figures/pdos_demo.png)
-
----
-
-### Polycrystalline Atomic Structure
-
-![Polycrystalline structure](figures/polycrystal_demo.png)
-
-These figures are representative portfolio results. Complete raw datasets and large trajectory files are intentionally excluded from the repository.
-
----
 
 ## Reproducibility
 
-This repository is organized so that each computational workflow can be examined independently.
+My undergraduate thesis work has not yet been published. Therefore, the LAMMPS input scripts, simulation data, and detailed results are not publicly available at this time.
 
-### 1. Obtain the Repository
+This section will be updated with the relevant scripts, data, and results once the associated work is published.
 
-After the repository is made public, it can be cloned using:
-
-```bash
-git clone https://github.com/Sourov-Ahmed-2005034/AlxCoCrFeNi-Atomistic-Simulations.git
-```
-
-Move into the repository:
-
-```bash
-cd AlxCoCrFeNi-Atomistic-Simulations
-```
-
----
-
-### 2. Install Python Dependencies
-
-A Python environment containing the required packages can be prepared using:
-
-```bash
-pip install -r requirements.txt
-```
-
-The demonstration notebooks can then be opened using Jupyter Notebook or JupyterLab.
-
-For example:
-
-```bash
-jupyter notebook
-```
-
----
-
-### 3. Install External Simulation Software
-
-The following programs should be installed separately:
-
-* LAMMPS
-* Atomsk
-* OVITO, if visualization is required
-
-The exact executable name and installation procedure may vary according to the operating system and computing environment.
-
----
-
-### 4. Obtain the Required Interatomic Potential
-
-Download the potential from its authorized source as described in:
-
-```text
-docs/interatomic_potential.md
-```
-
-If necessary, update the potential path in the relevant LAMMPS input script.
-
----
-
-### 5. Run a Demonstration LAMMPS Workflow
-
-For example, the tensile input script can generally be executed using a command of the form:
-
-```bash
-lmp -in 01_tensile/input/tensile_demo.in
-```
-
-The name of the LAMMPS executable may differ depending on the installation.
-
-Users should review the README inside each workflow directory before running the corresponding calculation.
-
----
-
-### 6. Run the Post-Processing Notebook
-
-For example:
-
-```text
-01_tensile/postprocessing/tensile_postprocessing_demo.ipynb
-```
-
-The notebook reads the representative dataset from:
-
-```text
-01_tensile/sample_data/
-```
-
-and produces a processed result in:
-
-```text
-01_tensile/sample_results/
-```
-
-The same organization is followed for the other workflows.
-
----
-
-### Notes on Reproducibility
-
-* Large trajectory and restart files are excluded from the repository.
-* Representative datasets are provided where appropriate.
-* Simulation parameters should be checked carefully before adapting the scripts to a different material system.
-* Input scripts are provided for research and educational demonstration and should not be used without understanding the underlying physical assumptions.
-* Results can depend strongly on the selected interatomic potential, system size, boundary conditions, equilibration procedure, temperature, strain rate, sampling time, and other simulation parameters.
-
----
+---  
+  
 
 ## References
 
@@ -657,6 +385,4 @@ https://github.com/Sourov-Ahmed-2005034
 This repository is under active documentation and organization. The simulation workflows are being prepared as reproducible research examples while preserving the integrity of the original research data and respecting redistribution restrictions associated with third-party computational resources.
 
 
-## References
 
-## Author
