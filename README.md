@@ -366,7 +366,7 @@ Khulna University of Engineering & Technology (KUET), Khulna, Bangladesh.
 * CALPHAD
 * Microstructure Modeling
 
-The primary goal of this repository is to provie a overview of my undergraduate computational materials research and its continuing extensions toward more advanced atomistic and multiscale materials modelling.
+The primary goal of this repository is to provide an overview of my undergraduate computational materials research and its continuing extensions toward atomistic and multiscale materials modeling.
 
 ---
 **GitHub:**
