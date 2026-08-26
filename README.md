@@ -1,14 +1,14 @@
 # AlxCoCrFeNi Atomistic Simulations
 
-Atomistic simulation workflows for investigating the mechanical, defect-related, thermal, vibrational, and microstructural behavior of Al<sub>x</sub>CoCrFeNi high-entropy alloys using molecular dynamics and related computational tools.
+Atomistic simulation workflows for studying the mechanical, thermal, vibrational, and microstructural behavior of AlxCoCrFeNi high-entropy alloys using molecular dynamics simulations.
 
 ---
 
 ## Overview
 
-This repository describes the computational work performed during my undergraduate research on **Al<sub>x</sub>CoCrFeNi high-entropy alloys (HEAs)**, with the Al content varied over the range: **0.1 ≤ x ≤ 0.7**
+This repository presents the computational work from my undergraduate research on **Al<sub>x</sub>CoCrFeNi high-entropy alloys (HEAs)**, with the Al content varied over the range: **0.1 ≤ x ≤ 0.7**
 
-The work primarily uses **molecular dynamics (MD) simulations in LAMMPS** to investigate how atomic-scale structure and composition influence different material properties.
+The work mainly uses **molecular dynamics (MD) simulations in LAMMPS** to study how composition and atomic-scale structure influence different material properties.
 
 Atomistic Simulations:
 
@@ -98,13 +98,14 @@ The repository contains **demonstration versions** of input files and representa
 
 ### 1. Uniaxial Tensile Simulation
 
-The tensile workflow is designed to investigate the mechanical response of Al<sub>x</sub>CoCrFeNi HEAs under uniaxial deformation.
+The tensile workflow examines the mechanical response of AlxCoCrFeNi HEAs under uniaxial deformation.
+It is used to study how alloy composition affects the stress-strain response and related mechanical behavior at the atomic scale.  
 
 The general workflow consists of:
 
 1. Atomic structure preparation
 2. Assignment of atomic species
-3. Interatomic potential definition
+3. Interatomic potential selection
 4. Energy minimization
 5. Thermal and pressure equilibration
 6. Application of controlled uniaxial deformation
@@ -117,7 +118,9 @@ The general workflow consists of:
 
 ### 2. Generalized Stacking Fault Energy
 
-The GSFE workflow investigates the energy variation produced by relative displacement of atomic planes along a selected crystallographic slip direction.
+The GSFE workflow studies the change in energy caused by the relative displacement of atomic planes along a selected crystallographic slip direction.
+
+This analysis helps examine defect-related behavior and the resistance of the crystal structure to slip.
 
 Generalized stacking fault calculations provide useful atomistic information about:
 
@@ -141,13 +144,11 @@ The workflow generally involves:
 
 ### 3. Lattice Thermal Conductivity
 
-The lattice thermal-conductivity workflow uses molecular dynamics to investigate heat transport in Al<sub>x</sub>CoCrFeNi alloys.
+The lattice thermal-conductivity workflow uses molecular dynamics to study heat transport in AlxCoCrFeNi alloys.
 
-The objective is to examine how changes in alloy composition and atomic-scale disorder affect thermal transport behavior.
+The main goal is to understand how changes in composition and atomic-scale disorder influence thermal transport.
 
-The workflow includes the required simulation preparation, equilibration, thermal-property calculations, data extraction, and post-processing.
-
-The exact thermal-conductivity methodology and simulation parameters used in the research are documented within the corresponding workflow.
+The workflow includes simulation setup, equilibration, thermal-property calculations, data extraction, and post-processing. The corresponding workflow folder contains the simulation details and parameters used in the research.
 
 
 
@@ -159,13 +160,15 @@ Two complementary atomistic analyses are included in this workflow.
 
 #### Phonon Density of States
 
-Phonon density of states provides information about the distribution of vibrational modes in the simulated material.
+Phonon density of states describes the distribution of vibrational modes in the simulated material.
 
-The PDOS analysis is used to investigate atomic vibrational behavior and how alloy composition influences the vibrational characteristics of the HEA system.
+The PDOS analysis is used to examine atomic vibrations and how changes in alloy composition affect the vibrational behavior of the HEA system.
 
 #### Mean-Square Displacement
 
-Mean-square displacement describes the average displacement of atoms from their initial positions as the simulation evolves.
+Mean-square displacement measures how far atoms move, on average, from their initial positions as the simulation progresses.
+
+The MSD analysis is used to examine atomic mobility and how atomic motion changes under different simulation conditions.
 
 MSD analysis is useful for examining:
 
@@ -301,9 +304,9 @@ Users attempting to reproduce the simulations should obtain the appropriate pote
 
 ## Reproducibility
 
-My undergraduate thesis work has not yet been published. Therefore, the LAMMPS input scripts, simulation data, and detailed results are not publicly available at this time.
+My undergraduate thesis has not yet been published, so the full LAMMPS input scripts, simulation data, and detailed results are not publicly available at this stage.
 
-This section will be updated with the relevant scripts, data, and results once the associated work is published.  
+I will update this section with the relevant scripts, data, and results once the work is published. 
 
     
 ---
@@ -366,7 +369,7 @@ Khulna University of Engineering & Technology (KUET), Khulna, Bangladesh.
 * CALPHAD
 * Microstructure Modeling
 
-The primary goal of this repository is to provide an overview of my undergraduate computational materials research and its continuing extensions toward atomistic and multiscale materials modeling.
+The main purpose of this repository is to present my undergraduate computational materials research and the related work I am continuing in atomistic and multiscale materials modeling.
 
 ---
 **GitHub:**
@@ -376,6 +379,6 @@ https://github.com/Sourov-Ahmed-2005034
 
 ### Repository Status
 
-This repository is under active documentation and organization. The simulation workflows are being prepared as reproducible research examples while preserving the integrity of the original research data and respecting redistribution restrictions associated with third-party computational resources.
+The repository is still being organized and documented. I am preparing the simulation workflows as clear, reproducible examples while keeping the original research data protected and respecting any restrictions on third-party computational resources.
 
 ---
